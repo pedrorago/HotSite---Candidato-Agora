@@ -1,0 +1,473 @@
+.bannerIndex {
+    height: 58em;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px 0px 20% 20%;
+}
+.bannerIndex h1 {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    text-transform: uppercase;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.5em;
+    font-family: Open Sans;
+    font-size: 3em;
+}
+.bannerIndex img {
+    width: 100%
+}
+.bannerIndex h1 strong {
+    color: #eb8822
+}
+
+.Simplifique {
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 7em;
+}
+.simplifiqueBanner {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.simplifiqueBanner .player {
+    width: 100%;
+    margin-top: -7em
+}
+.simplifiqueBanner h2 {
+    font-family: Open Sans;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2em;
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+.simplifiqueBanner .logoplayer {
+    max-width: 24em;
+}
+.simplifiqueText p {
+    color: #170201;
+    font-family: Open Sans;
+    font-size: 3em;
+    font-weight: 500;
+}
+.simplifiqueText {
+    width: 39%
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 64%;
+}
+.form {
+    padding-bottom: 4em;
+}
+.form h2 {
+    font-family: Open Sans;
+    font-size: 4em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1.7em;
+    margin-bottom: 0em;
+    color: #170201
+}
+.form h2 strong {
+    color: #656870
+}
+.form h3 {
+    font-family: Open Sans;
+    font-size: 2.5em;
+    font-weight: 400;
+    text-align: center;
+}
+.form label {
+    color: #686868;
+    font-size: 2.5em;
+    font-family: Open Sans;
+}
+.form input {
+    border: 1px solid #00377F;
+    font-style: italic;
+    background-color: white;
+    font-size: 2em;
+    font-family: Open Sans;
+    padding: 0.5em 0.8em;
+    border-radius: 10px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+.checkbox p {
+    font-family: Open Sans;
+    font-size: 1.5em;
+    margin-left: 1em;
+    color: #686868;
+}
+[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 1.25em; height: 1.25em;
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+
+[type="checkbox"]:checked + label:before {
+    background: #fff !important
+}
+
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 0.6em;
+  height: 0.6em;
+  background: #00377F;
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '\2713\0020';
+  position: absolute;
+  top: -0.2em;
+  left: 0;
+  font-size: 1.3em;
+  line-height: 0.8;
+  color: #09ad7e;
+  transition: all .2s;
+  font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 2px dotted blue;
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 2px solid #4778d9!important;
+}
+
+.empresas {
+    background: #fff;
+    padding-top: 2em;
+}
+.empresas h2 {
+    font-family: Open Sans;
+    text-align: center;
+    font-weight: 400;
+    font-size: 4em;
+    margin-top: 0em;
+    color: #686868;
+}
+.form button {
+    font-family: Open Sans;
+    background: #fcc602;
+    border: 0px;
+    width: 7em;
+    font-size: 2.5em;
+    padding: 0.4em;
+    margin: 0 auto;
+    margin-top: 1em;
+    border-radius: 9px;
+    color: #686868;
+    font-weight: 500;
+    cursor: pointer;
+}
+body {
+    background: #F2F2F2;
+}
+.slick-list  {
+    width: 80%;
+    margin: 0 auto
+}
+.galeria-box {
+    width: 15%;
+    margin-right: 3em;
+    height: 17em;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.galeria-box:focus {
+    outline: none;
+}
+.galeria-box img {
+    width: 100%;
+    transition: .3s ease-out;
+}
+.galeria-box:hover img {
+    transform: scale(1.1)
+}
+.galeria {
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.arrows span {
+    background: #f2f2f2;
+    font-size: 3em;
+    padding: 0.1em;
+    border-radius: 14px;
+    color: #686868;
+    border: 1px solid #686868;
+}
+.boxLeft span {
+    margin-left: 1em;
+}
+.boxRight span {
+    margin-right: 1em
+}
+.empresas-curva1 {
+    width: 100%;
+    height: 35em;
+    background: #fff;
+    border-radius: 100% 100% 0px 0px;
+}
+.empresas {
+    background: #fff;
+    padding-top: 2em;
+    margin-top: -24em;
+    border-radius: 19% 19% 0px 0px;
+}
+footer {
+    background: #43425D;
+    margin-top: -18em;
+}
+footer main {
+    padding: 7em 3em;
+
+}
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 10px solid #fff;
+    padding-bottom: 6em;
+}
+.empresas-curva2{
+    width: 100%;
+    height: 35em;
+    background: #fff;
+    border-radius: 0px 0px 100% 100%;
+}
+.candidatoAgoraImg {
+    max-width: 24em;
+}
+.dev {
+    display: flex;
+}
+.dev img {
+    max-width: 4em;
+}
+.dev p {
+    color: #FFC600;
+    font-family: Open Sans;
+    font-style: italic;
+    width: 13em; 
+}
+.container-redes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container-redes p {
+    color: #FFC600;
+    font-family: Open Sans;
+}
+.container-redes span {
+    display: flex;
+    align-items: center;
+}
+.container-redes span a img {
+    max-width: 5em;
+}
+.container-redes span a:last-child img {
+    max-width: 3em;
+}
+.alertas {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #FFC600;
+    font-family: Open Sans;
+    align-items: center;
+}
+.alertas input {
+    background: #32314B;
+    border: 0px;
+    padding: 0.8em 1em;
+    border-radius: 7px;
+}
+.alertas button {
+    position: absolute;
+    right: 0;
+    top: 3.2em;
+    height: 2.6em;
+    color: #686868;
+    cursor: pointer;
+}
+.cnpj {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1em;
+    color: #BDBDBD;
+    font-family: Open Sans;
+}
+
+@media(max-width: 1440px) 
+{
+    .simplifiqueBanner .player
+    {
+        margin-top: -4em;
+    }
+    .simplifiqueText {
+        width: 46%;
+    }
+    .form h2 {
+        font-size: 3.4em;
+    }
+}
+@media(max-width:1336px) 
+{
+    .simplifiqueText p {
+        font-size: 2.2em;
+    }
+    .simplifiqueText {
+        width: 46%;
+    }
+    .simplifiqueBanner {
+        width: 47%
+    }
+    .form h2 {
+        font-size: 3em;
+    }
+    .form h3 {
+        font-size: 2.3em
+    }
+}
+@media(max-width: 1024px)
+{
+    .bannerIndex h1 {
+        font-size: 2.4em;
+    }
+    .bannerIndex {
+        height: 24em
+    }
+    .Simplifique {
+        padding: 3em 4em;
+    }
+    .simplifiqueBanner {
+        width: 47%
+    }
+    .simplifiqueText p {
+        margin-top: 0;
+    }
+    .form h2 {
+        font-size: 2.4em;
+    }
+    .form h3 {
+        font-size: 1.8em;
+    }    
+    form {
+        width: 73%;
+    }
+    .form label {
+        font-size: 2.1em;
+    }
+    .empresas h2 {
+        font-size: 3em;
+    }
+    .empresas-curva1 {
+        height: 41em;
+    }
+    .empresas {
+        margin-top: -30em;
+        border-radius: 43% 43% 0px 0px;
+    }
+    footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .alertas {
+        width: 94%;
+        align-items: flex-start;
+    }
+    .alertas input {
+        width: 100%;
+    }
+    .alertas button {
+        right:  -33px;
+    }
+}
+@media(max-width: 768px)
+{
+    .bannerIndex {
+        height: 31em;
+    }
+    .Simplifique {
+        flex-direction: column-reverse;
+    }
+    .simplifiqueText {
+        width: 100%
+    }
+    .simplifiqueText p {
+        text-align: center;
+    }
+    .simplifiqueBanner {
+        width: 100%;
+    }
+}
